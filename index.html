@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Project 6 Asynch Web Apps</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>National Parks</h1>
+    <h2>By state</h2>
+    <form class="form" action="index.html" method="post">
+      <label for="state-select">Choose a state:</label>
+        <div class="dropdown-container">
+        <select class="select-dropdown">
+        </select>
+        </div>
+        <label for="maxResults">How many parks do you wish to see?</label>
+      <input type="number" name="maxResults" value="maxResults">
+      <button type="submit" name="button" class="submitButton">enter</button>
+    </form>
+    <section class="results">
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
