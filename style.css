@@ -1,0 +1,116 @@
+body {
+  background-color: #493e42;
+  display: border-box;
+  color: white;
+  text-align: center;
+}
+
+h1{
+  font-size: 48px;
+  color: lightblue;
+}
+
+h2 {
+  font-size: 40px;
+  color: white;
+}
+label {
+  display: block;
+  margin: 15px; 
+}
+select {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
+  font-size: 18px;
+  color: #493e42;
+  background-color: white;
+  border: 3px solid white;
+  text-transform: uppercase;
+  text-align-last: center;
+  height: 55px;
+}
+
+select:hover {
+  background-color: #493e42;
+  color: white;
+}
+
+input[type=number] {
+  border: 3px solid white;
+  background-color: white;
+  width: 75px;
+  padding: 12px 3px;
+  margin-bottom: 25px;
+  color: #493e42;
+}
+input[type=number]:hover {
+  background-color: #493e42;
+  color: white
+}
+
+.submitButton{
+  background-color: lightblue;
+  display: block;
+  padding: 12px;
+  margin: 0 auto;
+  width: 15%;
+  font-size: 24px;
+  color: #493e42;
+}
+
+.submitButton:hover {
+  background-color: #493e42;
+  color: white;
+}
+
+h2 {
+  color: lightblue;
+  font-size: 32px;
+}
+
+p {
+  max-width: 45%;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.link{
+  padding: 25px;
+}
+
+a {
+  color: lightblue;
+  font-size: 20px;
+}
+
+@media only screen
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    label {
+      font-size: 26px;
+    }
+    select {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 20px;
+      font-size: 18px;
+      color: #493e42;
+      background-color: white;
+      border: 3px solid white;
+      text-transform: uppercase;
+      text-align-last: center;
+      height: 75px;
+    }
+    h1 {
+      font-size: 32px;
+    }
+
+    h2{
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 12px;
+    }
