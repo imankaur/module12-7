@@ -32,7 +32,7 @@ function loadDropDown(allStates){
 function submitButton(){
   $('.form').submit(event => {
     event.preventDefault();
-    let stateSelected = $('..stateselected').val();
+    let stateSelected = $('.state-selected').val();
     console.log(stateSelected);
     let numResults = $('input[type=number]').val();
     callParksApi(stateSelected, numResults);
