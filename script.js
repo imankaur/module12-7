@@ -1,15 +1,5 @@
 let api_key='bujPhndNRqoU8ciylRfXIKdg59yarR7O6sqOsrWT';
 
-function callStateList(){
-  fetch(`https://developer.nps.gov/api/v1/parks?&api_key=${api_key}`)
-  .then(response => {
-    return response.json()
-  })
-  .then(allStatesResponse => {
-    loadDropDown(allStatesResponse)
-  })
-  .catch(error => console.log(error))
-}
 
 function callParksApi(stateSelected,numResults){
   fetch(`https://developer.nps.gov/api/v1/parks?stateCode=${stateSelected}&limit=${numResults-1}&api_key=bujPhndNRqoU8ciylRfXIKdg59yarR7O6sqOsrWT`)
@@ -76,7 +66,7 @@ function displayResults(newResults){
 }
 
 function init() {
-  callStateList();
+
 	submitButton();
 }
 
